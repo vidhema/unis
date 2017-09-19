@@ -1,0 +1,19 @@
+<div class="container">
+  <div *ngIf="post">
+  <a [routerLink]="['/posts']">Go Back</a>
+  <br>
+
+  <h2 class="page-header">{{post.title}}</h2>
+
+  <carousel>
+    <slide *ngFor="let image of imageUrls">
+      <img src="{{image.url}}" class="img-responsive" style="width:100%;height: 600px;" alt="First slide">
+    </slide>
+  </carousel>
+  
+  <div innerHTML="{{ post.body}}"></div>
+
+  <a class="btn btn-default" [routerLink]="['/edit/' + post.$key]">Edit</a>
+  <a class="btn btn-danger" (click)="onDeletePost()">Delete</a>
+</div>
+</div>

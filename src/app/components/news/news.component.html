@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="list-group">
+    <h1>NOVOSTI</h1>
+    <hr>
+    <!--<img style="width:100px;height: 100px;" [src]="image">-->
+    <div class="row" *ngFor="let post of niz">
+      <div class="col-md-4">
+        <img class=".img-responsive" src="{{ post.url }}" style="width:340px;height: 260px;">
+        <br>
+        <br>
+      </div>
+
+      <div class="col-md-8 ">
+        <h2><a style="font-size: 30px;" [routerLink]="['/vijesti/'+post.key]">{{post.title}}</a></h2>
+        <small>{{ (post.datetime | date)}}</small>
+        <div style="font-size: 18px; color: #757575;" innerHTML="{{ post.body.substring(0,100)}}...."></div>
+      </div>
+      
+    </div>
+    <hr>
+  </div>
+</div>

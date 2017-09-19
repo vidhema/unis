@@ -1,0 +1,14 @@
+<div class="container">
+  <div *ngIf="post">
+    <a [routerLink]="['/news']">Go Back</a>
+    <br>
+    <h2 class="page-header">{{post.title}}</h2>
+    <carousel>
+      <slide *ngFor="let image of imageUrls">
+        <img src="{{image.url}}" class="img-responsive" style="width:100%;height: 600px;" alt="First slide">
+      </slide>
+    </carousel>
+    <div innerHTML="{{ post.body}}"></div>
+  </div>
+</div>
+<br>

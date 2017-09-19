@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="wrapper">
+    <form #formData='ngForm' (ngSubmit)="onSubmit(formData)" class="form-signin">
+      <h3 class="form-signin-heading">Sign In</h3>
+      <br>
+
+      <input type="text" class="form-control" (ngModel)="email" placeholder="Email" name="email" required><br>
+      <input type="password" class="form-control" (ngModel)="password" placeholder="Password" name="password" required><br>
+
+      <button type="submit" [disabled]="!formData.valid" class="btn btn-lg btn-primary btn-block">Login</button>
+    </form>
+  </div>
+</div>

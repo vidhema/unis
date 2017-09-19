@@ -1,0 +1,17 @@
+<div class="container">
+  <a [routerLink]="['/posts']">Back</a>
+  <form (submit)="onAddSubmit()">
+    <div class="form-group">
+      <label id="title">Title</label>
+      <input class="form-control" type="text" name="title" [(ngModel)]="title" required>
+    </div>
+    <div class="form-group">
+      <label id="title">Period</label>
+      <input class="form-control" type="datetime" name="period" [(ngModel)]="period" required>
+    </div>
+    <div class="form-group">
+      <input id="report" name="report" [(ngModel)]="report" type="file">
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary btn-block">Submit</button>
+  </form>
+</div>

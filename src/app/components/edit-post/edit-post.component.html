@@ -1,0 +1,16 @@
+<div class="container">
+  <a [routerLink]="['/posts']">Back</a>
+  <form>
+    <div class="form-group">
+      <label id="title">Title</label>
+      <input class="form-control" type="text" name="title" [(ngModel)]="title" required>
+    </div>
+    <div class="form-group">
+      <label>Body</label>
+      <!--<textarea class="form-control" name="body" [(ngModel)]="body" cols="50" rows="10"></textarea>-->
+      <div [froalaEditor] name="body" [(ngModel)]="body"></div>
+    </div>
+    <button type="submit" class="btn btn-lg btn-primary btn-block" (click)="onEditSubmit()">Edit</button>
+  </form>
+</div>
+<br>

@@ -1,0 +1,168 @@
+<header id="header" class="tophed">
+  <ul class="cb-slideshow tophed">
+    <li><span>Image 01</span></li>
+    <li><span>Image 02</span></li>
+    <li><span>Image 03</span></li>
+    <li><span>Image 04</span></li>
+    <li><span>Image 05</span></li>
+    <li><span>Image 06</span></li>
+  </ul>
+
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+          <a class="navbar-brand" href="#"><img src="assets/3.png" class="img-responsive" alt=""></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" [collapse]="isCollapsed" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right"> <!--pull-right-->
+            <li class="active"><a href="#" class="smooth-scroll">Naslovnica</a></li>
+            <li class="dropdown">
+
+              <a href="#features" class="smooth-scroll">O nama <b class="caret"></b></a>
+
+
+              <ul class="dropdown-menu" id="menu1">
+
+                <li><a href="#">Financijsko izvješće</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Bitni događaji</a></li>
+
+
+              </ul>
+            </li>
+            <li><a href="#proccess" class="smooth-scroll">Novosti</a></li>
+            <li><a href="#pricing" class="smooth-scroll">Portfolio</a></li>
+            <li><a href="#usluge" class="smooth-scroll">Usluge</a></li>
+            <li><a href="#map" class="smooth-scroll">Lokacija</a></li>
+            <li><a href="#contact" class="smooth-scroll">Kontakt</a></li>
+            <li class="smooth-scroll" *ngIf="!(af.auth | async)"><a [routerLink]="['/login']">Login</a></li>
+            <li>
+              <a href="index_eng.html">
+                <img src="assets/images/engflag.png" style="height: 20px; width: 30px;" />
+              </a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/posts']">Posts</a></li>
+            <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/add-post']">Add Post</a></li>
+            <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/reports']">Reports</a></li>
+            <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/add-report']">Add report</a></li>
+            <li class="smooth-scroll" *ngIf="(af.auth | async)"><a (click)="logout()">Logout</a></li>
+          </ul>
+
+
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </div>
+  </nav>
+
+
+  <!-- .container -->
+  <div class="container tophed">
+
+    <div class="header-heading-tidle">
+      <div style="
+top: 187.75px;
+                 display: inline-block;
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+                  position: relative;
+                
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0">
+        <h1 style=" color:white;
+    text-transform: capitalize;
+    letter-spacing: -2px;
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;"> let's make a difference!</h1>
+        <span style="text-transform: none;
+    letter-spacing: 0;
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 400;
+    color:white;">Successfullyaa delivering custom software systems for over 16 years</span>
+      </div>
+    </div>
+    <div class="header-button">
+    </div>
+
+  </div>
+  <!-- .container end -->
+
+
+</header>
+
+<!--verzicja za mobitel ovde-->
+
+<nav class="navbar navbar-default topnothed">
+  <div class="container">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2"
+          aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+        <a class="navbar-brand" href="#"><img src="assets/3.png" class="img-responsive" alt=""></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+        <!-- id="navbar"-->
+        <ul class="nav navbar-nav">
+          <!-- navbar-left-->
+          <li class="active"><a href="#header" class="smooth-scroll">Naslovnica</a></li>
+          <li><a href="#features" class="smooth-scroll">O Nama</a></li>
+          <li><a href="#proccess" class="smooth-scroll">Novosti</a></li>
+          <!--[routerLink]="['/news']"-->
+          <li><a href="#pricing" class="smooth-scroll">Portfolio</a></li>
+          <li><a href="#usluge" class="smooth-scroll">Usluge</a></li>
+          <li><a href="#map" class="smooth-scroll">Lokacija</a></li>
+          <li><a href="#contact" class="smooth-scroll">Kontakt</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/posts']">Posts</a></li>
+          <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/add-post']">Add Post</a></li>
+          <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/reports']">Reports</a></li>
+          <li class="smooth-scroll" *ngIf="(af.auth | async)"><a [routerLink]="['/add-report']">Add report</a></li>
+          <li class="smooth-scroll" *ngIf="!(af.auth | async)"><a [routerLink]="['/login']">Login</a></li>
+          <li class="smooth-scroll" *ngIf="(af.auth | async)"><a (click)="logout()">Logout</a></li>
+          <li>
+            <a href="index_eng.html">
+              <img src="assets/images/engflag.png" style="height: 20px; width: 30px;" />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </div>
+</nav>

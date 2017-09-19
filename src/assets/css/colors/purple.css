@@ -1,0 +1,36 @@
+a, a:visited, .post-heading-center h2 strong, .tbl-pricing .tbl-prc-col .tbl-prc-heading h4, .tbl-pricing .tbl-prc-col .tbl-prc-content p strong, #navigation_affix .nav > li > a:hover, .affa_feature_icon .fa, .affa_team_profile h4, .affa_team_profile .socials a:hover, .affa_nav_tabs .nav-tabs > li > a:hover, .affa_nav_tabs .nav-tabs > li > a:focus { color:#b580e6; }
+
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, .ie input[type="range"]:focus, .ie9 input[type="range"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, select:focus, textarea:focus, .affa_nav_tabs .nav-tabs > li.active:first-child > a, .affa_nav_tabs .nav-tabs > li.active:first-child > a:hover, .affa_nav_tabs .nav-tabs > li.active:first-child > a:focus { border-color:#b580e6; }
+
+.btn-custom, input[type="button"], input[type="submit"], input[type="reset"], button, .post-heading-left:before, .tbl-pricing .tbl-prc-col.tbl-prc-col-recommended .tbl-prc-heading, #navigation_mobile .nav-menu-links, .affa_team_profile .socials .tooltip-inner { background-color:#b580e6; }
+
+.post-heading-left2 { border-left:2px solid #b580e6; }
+
+#navigation_affix .nav > li.active > a {
+	color:#b580e6;
+	border-top-color:#b580e6;
+}
+
+.affa_team_profile .socials .tooltip.bottom .tooltip-arrow { border-bottom-color:#b580e6; }
+
+.affa_nav_tabs .nav-tabs > li.active > a, .affa_nav_tabs .nav-tabs > li.active > a:hover, .affa_nav_tabs .nav-tabs > li.active > a:focus {
+	background-color:#b580e6;
+	border-color:#b580e6;
+}
+
+.btn-custom:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, button:hover, .btn-custom.btn-red:hover, input[type="button"].btn-red:hover, input[type="submit"].btn-red:hover, input[type="reset"].btn-red:hover, button.btn-red:hover { background-color:#a873da; }
+
+#navigation_mobile ul li a { color:#eadafa; }
+#navigation_mobile .nav-menu-button { background-color:#a873da; }
+#navigation_mobile .nav-menu-button button.nav-menu-toggle { color:#eadafa !important; }
+
+.tbl-pricing .tbl-prc-col .tbl-prc-heading p { color:#8053aa; }
+
+
+/* Don't change this value */
+
+a:hover { color:#404040; }
+
+.bg-image-overlay p, .bg-image-overlay h1, .bg-image-overlay h2, .bg-image-overlay h3, .bg-image-overlay h4, .bg-image-overlay h5, .bg-image-overlay h6, .bg-image-overlay a, .bg-image-overlay .post-heading-center p, #navigation_mobile ul li a:hover { color:#FFF; }
+
+#navigation_mobile .nav-menu-button button.nav-menu-toggle:hover { color:#FFF !important; }
